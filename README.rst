@@ -4,7 +4,7 @@ code call flow base on HF design
 
 ./doc/HFdesignForDev/designate flow.png
 
-[Flow](http://192.168.104.219/adtec/designate/blob/master/doc/HFdesignForDev/designate%20flow.png?raw=true)
+[Flow](http://github.com/adtec/designate/blob/master/doc/HFdesignForDev/designate%20flow.png?raw=true)
 
 ===========
 enable pool
@@ -16,7 +16,7 @@ get poo_id for zdns cms via access designate database:
     
 next time pls use below coomand to create zone:
 
-     openstack  zone create --email yudzh@adtec.com.cn ccdex.com. --attributes "pool_id":"your pool id for zdns cms"
+     openstack  zone create --email y@ad.com.cn ccdex.com. --attributes "pool_id":"your pool id for zdns cms"
 
 
 edit /etc/designate/designate.conf:
