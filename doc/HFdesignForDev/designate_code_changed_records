@@ -1,0 +1,9 @@
+designate modified by HF design:
+
+1. Disable mdns service and producer service, since origin designate make mdns service as master DNS, use DNS protocol.
+2. Use pool id to select target pool(HF design: one pool had one ZDNS CMS server). 
+3. Add acl/view CRUD methods
+4. Create Zone need use attributes parameter to give pool_id and view_id values, update zone/delete zone, need to get pool_id/view_id value via targeted zone object(use zone id got)
+5. Create acl/view, need to specified pool_id, so zdns cms backend can know we should use which CMS server to do such operations
+
+
